@@ -1,0 +1,95 @@
+/* ============================================
+   PROJECTS PAGE — projects.css
+   ============================================ */
+
+.projects-filter { 
+  background: var(--color-bg); 
+  padding: 1.5rem 24px; 
+  border-bottom: 1px solid var(--color-border);
+}
+
+.filter-btns {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.45rem 1.2rem;
+  border: 1px solid var(--color-border);
+  border-radius: 50px;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.filter-btn:hover,
+.filter-btn.active {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: rgba(201, 169, 110, 0.08);
+}
+
+/* PROJECTS GRID */
+.projects-grid-section { background: var(--color-surface); }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.8rem;
+}
+
+.project-card {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--transition), border-color var(--transition);
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent);
+}
+
+/* When filtering hides a card */
+.project-card.hidden { display: none; }
+
+.project-img-placeholder {
+  height: 180px;
+  background: var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  /* Replace with real image using the style attribute or a real <img> tag */
+}
+
+.project-info { padding: 1.5rem; }
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.tag {
+  background: rgba(201, 169, 110, 0.12);
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 50px;
+  border: 1px solid rgba(201, 169, 110, 0.3);
+}
+
+.project-info h3 { margin-bottom: 0.5rem; font-size: 1.05rem; }
+.project-info p { color: var(--color-text-muted); font-size: 0.88rem; margin-bottom: 1.2rem; line-height: 1.6; }
+
+.project-links { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.project-links .btn { display: flex; align-items: center; gap: 0.4rem; }
+
+/* GITHUB CTA */
+.projects-github { background: var(--color-bg); }

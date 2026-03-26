@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Projects</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">YourName</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: HEADER -->
+  <section class="section page-header" id="projects-header">
+    <div class="container">
+      <p class="hero-sub">My Work</p>
+      <h1>Projects</h1>
+      <p class="section-subtitle">A curated collection of things I've built, experimented with, and shipped.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: FILTER BUTTONS -->
+  <section class="section projects-filter" id="filter">
+    <div class="container">
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="research">Research</button>
+        <button class="filter-btn" data-filter="tool">Tools</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PROJECTS GRID -->
+  <section class="section projects-grid-section" id="projects-list">
+    <div class="container">
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card" data-category="web">
+          <div class="project-img-placeholder">
+            <!-- Replace with: <img src="images/project1.jpg" alt="Project One"> -->
+            <span>Project Image</span>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3>Project Title One</h3>
+            <p>Describe what this project does, what problem it solves, and any interesting technical details. Keep it concise but informative.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn btn-small btn-outline"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="research">
+          <div class="project-img-placeholder">
+            <span>Project Image</span>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Data</span>
+            </div>
+            <h3>Project Title Two</h3>
+            <p>Describe what this project does, what problem it solves, and any interesting technical details. Keep it concise but informative.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn btn-small btn-outline"><i class="fas fa-file-pdf"></i> Paper</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="tool">
+          <div class="project-img-placeholder">
+            <span>Project Image</span>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Your Tech</span>
+              <span class="tag">Your Tech</span>
+            </div>
+            <h3>Project Title Three</h3>
+            <p>Describe what this project does, what problem it solves, and any interesting technical details. Keep it concise but informative.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-img-placeholder">
+            <span>Project Image</span>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Your Tech</span>
+              <span class="tag">Your Tech</span>
+            </div>
+            <h3>Project Title Four</h3>
+            <p>Describe what this project does, what problem it solves, and any interesting technical details. Keep it concise but informative.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn btn-small btn-outline"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more project cards by copying the block above -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: GITHUB CTA -->
+  <section class="section projects-github" id="github-cta">
+    <div class="container cta-box">
+      <i class="fab fa-github" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
+      <h2>See More on GitHub</h2>
+      <p>Most of my work is open source. Check out my GitHub profile for the full collection.</p>
+      <a href="https://github.com/yourusername" target="_blank" class="btn btn-primary">Visit GitHub</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">YourName</span>
+        <p class="footer-tagline">Researcher · Developer · Creator</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" title="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" title="Your Other Platform"><i class="fas fa-link"></i></a>
+      </div>
+      <div class="footer-contact-info">
+        <p><i class="fas fa-envelope"></i> youremail@example.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Your City, Country</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 YourName. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
